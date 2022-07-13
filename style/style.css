@@ -1,4 +1,107 @@
-*,html,body{
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*, html, body{
     margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-section{
+    background: #EEEFF1;;
+}
+.link{
+    display: inline-block;
+    padding-top: 80px;
+}
+.link-menu{
+font-weight: 400;
+color: black;
+margin-right: 45px;
+}
+.link:first-child .link-menu{
+    font-weight: 500;
+    color: #34547A;
+
+}
+.bold-text{
+    padding-top: 160px;
+    font-weight: 500;
+    font-size: 48px;
+}
+.description{
+    padding-top: 60px;
+    width: 540px;
+    font-weight: 400;
+    color: #727272;
+}
+.btn{
+    padding: 20px 40px;
+    background: #34547A;
+    color: white;
+    letter-spacing: 0.1em;
+}
+.padding{
+    padding: 65px 0px 140px 0px;
+}
+.about{
+text-align: center;
+padding-top: 112px;
+font-weight: 500;
+font-size: 32px;
+}
+.center{
+margin: auto;
+text-align: center;
+}
+.bottom{
+    padding-bottom: 100px;
+}
+.blue-line{
+    background: #34547A;
+}
+.p-main{
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+}
+.aline p{
+    color: white;
+}
+.projects{
+padding-top: 100px;
+padding-bottom: 100px;
+display: inline-block;
+}
+.margin{
+    margin-right: 45px;
+}
+.aline{
+display: inline-block;
+margin-left: 20px;
+vertical-align: auto;
+}
+.p-main{
+    margin-bottom: 10px;
+}
+.center-aline{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.video{
+    padding-bottom: 100px;
+    max-width: 1100px;
+}
+.footer-text{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.footer-text-2{
+    padding-bottom: 50px;
+    font-size: 13px;
+    color: white;
 }
