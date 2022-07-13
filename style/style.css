@@ -1,4 +1,70 @@
-*,html,body{
+*, html, body{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: black;
+}
+.menu{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul.menu-list{
+    margin-top: 10px;
+}
+.product-item{
+    display: inline-block;
+}
+.menu-list li{
+    margin-right: 15px;
+}
+.minu-link{
+    display: block;
+    padding-top: 10px;
+    margin-right: 10px;
+    background: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+}
+.minu-link:hover{
+    background: linear-gradient( to right, #c1f0ff, #b8d4ff, #ecbdff);
+    
+} 
+.menu-list li:hover .sub-menu-list{
+    display: block;
+}
+
+.sub-menu-list{
+    position: absolute;
+    display: none;
+    padding-top: 10px;
+}
+.sub-menu-list li:hover .sub-sub-menu-list{
+    display: block;
+}
+
+.sub-sub-menu-list{
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 85%;
+
+}
+.list-2{
+    margin-top: 40px;
+}
+.menu-list>li:hover>a{
+    background: linear-gradient( to right, #c1f0ff, #b8d4ff, #ecbdff); 
+}
+.sub-menu-list>li:hover>a{
+    background: linear-gradient( to right, #c1f0ff, #b8d4ff, #ecbdff); 
+
 }
