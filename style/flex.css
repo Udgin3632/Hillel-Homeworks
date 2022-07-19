@@ -1,0 +1,39 @@
+.flex{
+    display: flex;
+}
+.j-c-c{
+    display: flex;
+    justify-content: center;
+}
+.j-c-b{
+    display: flex;
+    justify-content: space-between;
+}
+.j-c-a{
+    display: flex;
+    justify-content: space-around; 
+}
+.a-i-c{
+    display: flex;
+    align-items: center;
+}
+.a-i-e{
+    display: flex;
+    justify-content: flex-end;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.center-2{
+    flex-direction: column;
+}
+
+
+
+
+
