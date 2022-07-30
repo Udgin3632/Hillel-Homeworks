@@ -1,4 +1,217 @@
 *,html,body{
     padding: 0;
     margin: 0;
+    font-size: 0;
+}
+.sky{
+    width: 100%;
+    height: 50vh;
+}
+.grass{
+    width: 100%;
+    height: 10vh;
+}
+.road{
+    width: 100%;
+    height: 20vh;
+}
+.grass-2{
+    width: 100%;
+    height: 20vh;
+}
+.background{
+    position: relative;
+}
+
+.wheels{
+    position: absolute;
+    top: 80px;
+    
+}
+.wheels img:first-child{
+    animation: spining 5s infinite linear;
+}
+.wheels img:nth-child(2){
+    margin-left: 123px;
+    animation: spining 3s infinite linear;
+    
+}
+@keyframes spining{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.car{
+    width: 300px;
+    position: fixed;
+    top: 63vh;
+    left: 0;
+    transform: rotateY(180deg);
+    animation: car-ride 15s infinite linear;
+    
+}
+
+@keyframes car-ride {
+    0%{
+
+    }
+    48%{
+        top: 63vh;
+        left: calc(100% - 300px);
+    }
+
+    49%{
+        left: calc(100% - 300px);
+        top: 53vh;
+        transform: rotateY(180deg);
+    }
+    50%{
+        top: 53vh;
+        transform: rotateY(0deg);
+    }
+
+    99%{
+        top: 53vh;
+        left: 0;
+        transform: rotateY(0deg);
+    }
+    100%{
+        top: 63vh;
+        transform: rotateY(180deg); 
+    }
+}
+.car-body img{
+    position: relative;
+    z-index: 10;
+}
+.light{
+    position: absolute;
+    top: -100px;
+    z-index: 0;
+}
+.circle-light{
+    fill: red;
+    animation: light-change 1s infinite;
+}
+@keyframes light-change{
+    from{
+        fill: red;
+    }
+    to{
+        fill: blue;
+    }
+}
+.cloud{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: cloud-move 15s infinite linear;
+}
+@keyframes cloud-move{
+    0%{
+        left: -60%;
+
+    }
+    100%{
+        left: 100%;
+
+    }
+}
+.cloud-2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 5%;
+    left: -100%;
+    animation: cloud-move-2 18s infinite linear;
+}
+@keyframes cloud-move-2{
+    0%{
+        left: -100%;
+
+    }
+    100%{
+        left: 100%;
+
+    }
+}
+.cloud-3{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -150%;
+    animation: cloud-move-3 25s infinite linear;
+}
+@keyframes cloud-move-3{
+    0%{
+        left: -150%;
+
+    }
+    100%{
+        left: 100%;
+        
+    }
+}
+.sun{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 5%;
+    left: calc(50% - 100px);
+    animation: sun 5s infinite linear;
+}
+@keyframes sun{
+        0% {
+            transform: scale(1);
+            transform-origin: left top;
+        }
+        50% {
+            transform: scale(1.1);
+            transform-origin: left top ;
+        }
+        100%{
+            transform: scale(1);
+            transform-origin: left top;
+        }
+}
+
+.road-white{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 69vh;
+    left: 5%;
+}
+.road-white-right{
+    left: 15%;
+}
+.road-white-right-2{
+    left: 25%;
+}
+.road-white-right-3{
+    left: 35%;
+}
+.road-white-right-4{
+    left: 45%;
+}
+.road-white-right-5{
+    left: 55%;
+}
+.road-white-right-6{
+    left: 65%;
+}
+.road-white-right-7{
+    left: 75%;
+}
+.road-white-right-8{
+    left: 85%;
+}
+.road-white-right-9{
+    left: 95%;
 }
