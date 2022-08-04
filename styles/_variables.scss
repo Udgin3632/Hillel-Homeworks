@@ -1,0 +1,29 @@
+@mixin font ($num, $weight, $align) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $num;
+    font-weight: $weight;
+    text-align: $align;
+    line-height: 24px;
+}
+$orange-color: #ff5c36;
+$orange-color-text: #fc6f4e;
+$blue-color: #4eb2f7;
+$violet: #c049f8;
+$lavender: #817eff;
+$pink: #f74770;
+$text-grey: #494949;
+$text-grey-2: #808080;
+$light-pink: #fff3f0;
+$grey-light: #fbfbfb;
+$grey: #f7f7f7;
+$white: white;
+
+$main-width: 1170px;
+@mixin padding ($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+@mixin margin ($top-m, $bottom-m) {
+    margin-top: $top-m;
+    margin-bottom: $bottom-m;
+}

@@ -1,0 +1,17 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<title>Work Procces</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.502;fill: #000000 } 
+	</style>
+	<g id="Work Procces">
+		<g id="1 Hover">
+			<g id="Batton">
+				<g id="arrow">
+					<path id="Rectangle 1" class="shp0" d="M6.96 0L8.35 0L8.35 16L6.96 16L6.96 0Z" />
+					<path id="Rectangle 1 copy" class="shp0" d="M0 7.65L16 7.65L16 9.04L0 9.04L0 7.65Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
