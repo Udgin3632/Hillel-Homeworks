@@ -516,6 +516,10 @@ form input {
     justify-content: center;
     align-items: center;
     margin: 0px 10px;
+    transition: 0.2s;
+    &:hover{
+        background: $orange-color;
+    }
 }
 .flex-footer{
     display: flex;
