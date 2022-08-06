@@ -175,28 +175,6 @@ form input {
   color: white;
 }
 
-.card-second a.second {
-  background: white;
-  color: black;
-  box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.1);
-}
-.card-second a.second::before {
-  content: url(../img/arrow.svg);
-  width: 15px;
-  height: 15px;
-  background-size: 100%;
-  margin-right: 15px;
-  vertical-align: middle;
-}
-.card-second a.second:hover {
-  background: #ff5c36;
-  color: white;
-}
-.card-second a.second:hover::before {
-  content: url(../img/arrow.svg);
-  filter: invert(1);
-}
-
 .card-second {
   position: relative;
 }
@@ -218,6 +196,245 @@ form input {
 .cards {
   display: flex;
   justify-content: space-between;
+}
+
+.lightgrey-bg {
+  background: #fbfbfb;
+}
+
+.orange-block {
+  width: 360px;
+  height: 360px;
+  margin: 15px;
+  background: #ff5c36;
+  transition: 0.5s;
+}
+.orange-block:hover {
+  box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.flex {
+  display: flex;
+}
+
+.rect {
+  width: 100px;
+  height: 90px;
+  margin: 5px 0px;
+  position: relative;
+  background: #fbfbfb;
+  transition: 0.5s;
+}
+.rect:hover {
+  background: white;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.rect .img-round {
+  position: absolute;
+  left: 30px;
+  top: 25px;
+}
+
+.rect .img-2 {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+}
+
+.rect .img-3 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.card-body a.content-btn {
+  width: 235px;
+  height: 55px;
+  line-height: 40px;
+  border-radius: 27px;
+  box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.1);
+  background: white;
+  color: black;
+}
+.card-body a.content-btn::before {
+  content: url(../img/arrow.svg);
+  width: 15px;
+  height: 15px;
+  background-size: 100%;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.card-body a.content-btn:hover {
+  background: #ff5c36;
+  color: white;
+}
+.card-body a.content-btn:hover::before {
+  content: url(../img/arrow.svg);
+  filter: invert(1);
+}
+
+.card-body a.margin-left {
+  margin-left: unset;
+}
+
+.servises-content-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-content .servises-text-head {
+  margin-bottom: 0;
+}
+
+.servises-text {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.servises-text-2 {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.icons {
   padding-top: 0px;
   padding-bottom: 180px;
+}
+
+.team {
+  width: 360px;
+  height: 445px;
+  background: #ff5c36;
+  position: relative;
+  transition: 1s;
+}
+.team-name {
+  width: 260px;
+  height: 95px;
+  background: white;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.team:hover {
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+.team .skils {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.team .skils img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.team .team-name-2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.team .social-network {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.team .social-network a:hover {
+  filter: invert(1);
+}
+.team .social-network a:nth-child(3) {
+  margin: 0px 10px;
+}
+
+.team-text-head {
+  text-align: center;
+  color: #494949;
+  font-size: 30px;
+  vertical-align: middle;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.team-text {
+  text-align: center;
+  font-size: 16px;
+  color: #808080;
+}
+
+.pink {
+  background: #fff3f0;
+}
+
+.review-block {
+  width: 535px;
+  height: 270px;
+  border: 1px solid #808080;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  transition: 0.5s;
+}
+.review-block:hover {
+  border: transparent;
+  box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.review-block .round {
+  position: absolute;
+  background: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #808080;
+  bottom: 220px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.review-block .quote-center {
+  text-align: center;
+  color: #494949;
+}
+.review-block .quote-main {
+  margin-top: 50px;
+}
+.review-block .quote-img-center {
+  margin-bottom: 20px;
+}
+.review-block span.font-weight {
+  color: #494949;
+  font-weight: 600;
+}
+
+.review {
+  width: 1170px;
+  height: 400px;
+}
+
+.text-review {
+  padding-bottom: 50px;
+}
+
+.carousel-dark .carousel-indicators button.active {
+  background-color: orange;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  width: 18px;
+  height: 6px;
+  background-color: #e0e0e0;
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

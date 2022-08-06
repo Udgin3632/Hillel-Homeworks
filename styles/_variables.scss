@@ -17,6 +17,7 @@ $light-pink: #fff3f0;
 $grey-light: #fbfbfb;
 $grey: #f7f7f7;
 $white: white;
+$grey-btn: #e0e0e0;
 
 $main-width: 1170px;
 @mixin padding ($top, $bottom) {
@@ -26,4 +27,8 @@ $main-width: 1170px;
 @mixin margin ($top-m, $bottom-m) {
     margin-top: $top-m;
     margin-bottom: $bottom-m;
+}
+@mixin absolut-center {
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
