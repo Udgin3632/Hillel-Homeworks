@@ -8,11 +8,6 @@ body {
     list-style: none;
 }
 
-.conteiner {
-    width: $main-width;
-    margin: 0 auto;
-}
-
 .grey-bg {
     background: $grey;
 }
@@ -22,6 +17,7 @@ body {
     color: $text-grey;
     padding: 13px 20px;
     border: 4px solid #706b73;
+    text-align: center;
 }
 
 .header {
@@ -41,8 +37,6 @@ span {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     @include padding (85px, 150px)
 }
@@ -50,6 +44,9 @@ span {
 .header-title {
     @include font(50px, 600, center);
     color: $text-grey;
+    @media screen and (max-width:765px) {
+        line-height: 60px;
+    }
 }
 
 .header-text {
@@ -64,7 +61,10 @@ span {
     border-width: 0px;
     transition: 1s;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-
+    @media screen and (max-width:500px) {
+        width: 300px;
+        height: 385px;
+    }
     &:hover {
         box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.2);
         transform: scale(1.02);
@@ -78,6 +78,10 @@ input {
     outline: none;
     border-bottom: 1px solid $text-grey-2;
     @include margin (0px, 30px);
+    @media screen and (max-width:500px) {
+        width: 215px;
+        
+    }
 }
 
 form input {
@@ -88,7 +92,11 @@ form input {
 
 .text-message {
     color: $text-grey-2;
-    margin-left: 25px
+    margin-left: 25px;
+    @media screen and (max-width: 1200px) {
+        text-align: start;
+    }
+    
 }
 
 .card-body .card-title {
@@ -97,8 +105,7 @@ form input {
     color: $text-grey-2;
 }
 
-.card-body {
-    .btn {
+.card-body .btn{
         width: 235px;
         height: 55px;
         line-height: 40px;
@@ -109,7 +116,6 @@ form input {
         margin-left: auto;
         margin-right: auto;
         color: white;
-    }
 }
 
 .card a {
@@ -132,10 +138,12 @@ form input {
     width: 260px;
     height: 260px;
     transition: 0.5s;
-
     &:hover {
         box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
         transform: scale(1.05);
+    }
+    @media screen and (max-width: 1200px) {
+        margin-top: 75px;
     }
 }
 
@@ -166,7 +174,6 @@ form input {
 
 .card-second {
     position: relative;
-
     & .btn {
         position: absolute;
         top: 230px;
@@ -182,11 +189,6 @@ form input {
     @include padding(50px, 0px)
 }
 
-.cards {
-    display: flex;
-    justify-content: space-between;
-}
-
 // Featured Works
 .lightgrey-bg {
     background: $grey-light;
@@ -198,7 +200,10 @@ form input {
     margin: 15px;
     background: $orange-color;
     transition: 0.5s;
-
+        @media screen and (max-width: 400px) {
+        width: 260px;
+        height: 260px;
+        }
     &:hover {
         box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.2);
         transform: scale(1.02);
@@ -272,7 +277,13 @@ form input {
         }
     }
 }
-
+.watch-img{
+    & img{
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
 .card-body a.margin-left {
     margin-left: unset;
 
@@ -306,7 +317,9 @@ form input {
     background: $orange-color;
     position: relative;
     transition: 1s;
-
+    @media screen and (max-width:1200px) {
+        margin-top: 75px;
+    }
     &-name {
         width: 260px;
         height: 95px;
@@ -390,7 +403,10 @@ form input {
     align-items: center;
     height: 270px;
     transition: 0.5s;
-
+    @media screen and (max-width:768px) {
+        width: 335px;
+        height: 270px;
+    }
     &:hover {
         border: transparent;
         box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.1);
@@ -404,7 +420,8 @@ form input {
         border-radius: 50%;
         border: 1px solid #808080;
         bottom: 220px;
-        @include absolut-center
+        @include absolut-center;
+
     }
 
     & .quote-center {
@@ -478,7 +495,33 @@ form input {
         }
     }
 }
-
+.carousel-indicators{
+    @media screen and (max-width:3840px) {
+        position: absolute;
+        top: 360px;
+        
+    }
+    @media screen and (max-width:1200px) {
+        position: absolute;
+        top: 700px;
+        
+    }
+    @media screen and (max-width:756px) {
+        position: absolute;
+        top: 700px;
+        
+    }
+}
+.carousel-control-next{
+    @media screen and (max-width:550px) {
+    display: none;
+    }
+}
+.carousel-control-prev{
+    @media screen and (max-width:550px) {
+    display: none;
+    }
+}
 .padding-bottom{
     @include padding(0px, 140px)
 }
@@ -487,9 +530,12 @@ form input {
     background: $grey-light;
 }
 .logo-list{
-    display: flex;
-    justify-content: space-between;
     @include padding(80px, 90px);
+}
+.logo-inner{
+    @media screen and (max-width: 1200px) {
+        @include margin (25px, 25px)
+    }
 }
 // footer
 .btn-footer{
@@ -532,5 +578,11 @@ form input {
     & .margin-footer{
         margin-bottom: 0px;
         margin-left: 20px;
+    }
+    .margin-footer{
+        @media screen and (max-width: 500px) {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
     }
 }

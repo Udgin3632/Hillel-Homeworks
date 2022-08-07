@@ -10,11 +10,6 @@ body {
   list-style: none;
 }
 
-.conteiner {
-  width: 1170px;
-  margin: 0 auto;
-}
-
 .grey-bg {
   background: #f7f7f7;
 }
@@ -28,6 +23,7 @@ body {
   color: #494949;
   padding: 13px 20px;
   border: 4px solid #706b73;
+  text-align: center;
 }
 
 .header a {
@@ -45,8 +41,6 @@ span {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 85px;
   padding-bottom: 150px;
@@ -59,6 +53,11 @@ span {
   text-align: center;
   line-height: 24px;
   color: #494949;
+}
+@media screen and (max-width: 765px) {
+  .header-title {
+    line-height: 60px;
+  }
 }
 
 .header-text {
@@ -79,6 +78,12 @@ span {
   transition: 1s;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 500px) {
+  .card {
+    width: 300px;
+    height: 385px;
+  }
+}
 .card:hover {
   box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
@@ -93,6 +98,11 @@ input {
   margin-top: 0px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 500px) {
+  input {
+    width: 215px;
+  }
+}
 
 form input {
   display: block;
@@ -103,6 +113,11 @@ form input {
 .text-message {
   color: #808080;
   margin-left: 25px;
+}
+@media screen and (max-width: 1200px) {
+  .text-message {
+    text-align: start;
+  }
 }
 
 .card-body .card-title {
@@ -152,6 +167,11 @@ form input {
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
+@media screen and (max-width: 1200px) {
+  .card-second {
+    margin-top: 75px;
+  }
+}
 
 .card-bg-1 {
   background: #4eb2f7;
@@ -196,11 +216,6 @@ form input {
   padding-bottom: 0px;
 }
 
-.cards {
-  display: flex;
-  justify-content: space-between;
-}
-
 .lightgrey-bg {
   background: #fbfbfb;
 }
@@ -211,6 +226,12 @@ form input {
   margin: 15px;
   background: #ff5c36;
   transition: 0.5s;
+}
+@media screen and (max-width: 400px) {
+  .orange-block {
+    width: 260px;
+    height: 260px;
+  }
 }
 .orange-block:hover {
   box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.2);
@@ -279,6 +300,12 @@ form input {
   filter: invert(1);
 }
 
+@media screen and (max-width: 768px) {
+  .watch-img img {
+    display: none;
+  }
+}
+
 .card-body a.margin-left {
   margin-left: unset;
 }
@@ -313,6 +340,11 @@ form input {
   background: #ff5c36;
   position: relative;
   transition: 1s;
+}
+@media screen and (max-width: 1200px) {
+  .team {
+    margin-top: 75px;
+  }
 }
 .team-name {
   width: 260px;
@@ -391,6 +423,12 @@ form input {
   align-items: center;
   height: 270px;
   transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .review-block {
+    width: 335px;
+    height: 270px;
+  }
 }
 .review-block:hover {
   border: transparent;
@@ -475,6 +513,37 @@ form input {
   z-index: 100;
 }
 
+@media screen and (max-width: 3840px) {
+  .carousel-indicators {
+    position: absolute;
+    top: 360px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .carousel-indicators {
+    position: absolute;
+    top: 700px;
+  }
+}
+@media screen and (max-width: 756px) {
+  .carousel-indicators {
+    position: absolute;
+    top: 700px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel-control-prev {
+    display: none;
+  }
+}
+
 .padding-bottom {
   padding-top: 0px;
   padding-bottom: 140px;
@@ -485,10 +554,15 @@ form input {
 }
 
 .logo-list {
-  display: flex;
-  justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo-inner {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 
 .btn-footer {
@@ -535,4 +609,10 @@ form input {
 .socials .margin-footer {
   margin-bottom: 0px;
   margin-left: 20px;
+}
+@media screen and (max-width: 500px) {
+  .socials .margin-footer {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=index.css.map */
