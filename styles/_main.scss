@@ -38,7 +38,10 @@ span {
 
 .header {
     align-items: center;
-    @include padding (85px, 150px)
+    @include padding (85px, 150px);
+    @media screen and (max-width:765px) {
+        @include padding (35px, 100px)
+    }
 }
 
 .header-title {
@@ -46,13 +49,17 @@ span {
     color: $text-grey;
     @media screen and (max-width:765px) {
         line-height: 60px;
+        font-size: 35px;
     }
 }
 
 .header-text {
     @include font(16px, 400, center);
     color: $text-grey-2;
-    @include padding (25px, 100px)
+    @include padding (25px, 100px);
+    @media screen and (max-width:765px) {
+        @include padding (0px, 25px);
+    }
 }
 
 .card {
@@ -131,7 +138,10 @@ form input {
 
 // Work Process
 .work-proccces {
-    @include padding(150px, 0px)
+    @include padding(150px, 0px);
+    @media screen and (max-width:765px) {
+        @include padding(55px, 0px);
+    }
 }
 
 .card-second {
@@ -307,7 +317,10 @@ form input {
 }
 
 .icons {
-    @include padding (0px, 180px)
+    @include padding (0px, 180px);
+    @media screen and (max-width:765px) {
+        @include padding(0px, 0px);
+    }
 }
 
 // Team
