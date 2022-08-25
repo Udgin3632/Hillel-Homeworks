@@ -1,0 +1,15 @@
+@mixin shadow-type-1 {
+    background: #e7e7f1;
+    border: none;
+    box-shadow: -3px -3px 4px  white, 2px 2px 5px black;
+}
+@mixin shadow-type-2 {
+    background: #e7e7f1;
+    border: none;
+    box-shadow: inset 3px 3px 4px  black, inset -2px -2px 5px white;
+}
+@mixin shadow-type-3 {
+    background: #e7e7f1;
+    border: none;
+    box-shadow: inset 1px -2px 5px black, inset -10px 8px 5px white;
+}
